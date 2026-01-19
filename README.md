@@ -7,7 +7,7 @@ A tokenizer translates back and forth between strings and sequences of symbols f
 ## 1. Train the tokenizer
 By default we are training a vocab size of 2**16 = 65,536 tokens (a nice number), of which a few tokens are reserved as special (to be used for the chat schema later). The training set is 2B characters, which only takes ~1 minute. The training algorithm is identical to the one used by OpenAI (regex splitting, byte-level BPE).
 
-###BPE (byte pairing enconding algorithm) as mechanism for tokenization
+### BPE (byte pairing enconding algorithm) as mechanism for tokenization
 From GPT-2 paper:
 Vocabulary of 50,257 tokens.
 Context size of 1024 tokens.
@@ -15,7 +15,7 @@ So in the attention layer every token is appending to the sequence of previous t
 
 Tokenizer is needed to go from text to sequences to tokens, and viceversa.
 
-###Why do you need tokenization?
+### Why do you need tokenization?
 Spell words problems? tokenization
 Bad at simple arithmetic? Tokenization
 worse at non-english languages? Tokenizaton
